@@ -10,12 +10,12 @@ int main()
         scanf("%d",&a[i]);
     }
     printf("enter pos ");
-    scanf("%d",&pos);
+    scanf("%d",pos);
     printf("enter the value");
-    scanf("%d",&val);
-    for(i=n;i>=pos;i--)
+    scanf("%d",val);
+    for(i=n-1;i>=pos-1;i--)
     {
-        a[i+1]=a[i];
+        a[i]=a[i-1];
     }
     n++;
     a[pos]=val;
